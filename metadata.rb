@@ -1,20 +1,17 @@
 name 'sensu_server_chef'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Lynn Caldwell'
+maintainer_email 'lynn@scalr.com'
 license 'All Rights Reserved'
 description 'Installs/Configures sensu_server_chef'
 long_description 'Installs/Configures sensu_server_chef'
 version '0.1.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/sensu_server_chef/issues'
+%w(centos redhat ubuntu).each do |os|
+  supports os
+end
 
-# The `source_url` points to the development repository for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/sensu_server_chef'
+issues_url 'https://github.ge.com/lcc2207/sensu_server_chef'
+source_url 'https://github.ge.com/lcc2207/sensu_server_chef'
+
+depends 'sensu', '~> 4.0.6'

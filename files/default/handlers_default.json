@@ -1,0 +1,8 @@
+{
+  "handlers": {
+    "default": {
+      "command": "/opt/sensu/embedded/bin/handler-mailer.rb",
+      "type": "pipe"
+    }
+  }
+}
