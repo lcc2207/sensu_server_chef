@@ -1,6 +1,6 @@
 # sensu cookbook attributes
 default['sensu']['use_ssl'] = false
-default['sensu']['version'] = '1.2.0-1'
+default['sensu']['version'] = '1.2.1-2'
 
 # sensu_server_chef cookbook attributes
 default['sensu_server_chef']['mail_from'] = 'chef-sensu@scalr.com'
