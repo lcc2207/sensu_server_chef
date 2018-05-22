@@ -12,12 +12,6 @@ Cookbook to install and configure the base base Sensu Server for basic monitorin
 ## Attributes
 # sensu_server_chef cookbook attributes
 
-default['sensu_server_chef']['mail_to'] = 'lynn@scar.com'
-default['sensu_server_chef']['smtp_address'] = 'test.scar.com'
-default['sensu_server_chef']['smtp_port'] = '25'
-default['sensu_server_chef']['smtp_domain'] = 'scalr.com'
-
-
 <table>
   <tr>
     <th>Key</th>
