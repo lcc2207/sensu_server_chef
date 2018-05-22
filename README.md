@@ -133,7 +133,17 @@ Include `sensu_server_chef` in your node's `run_list`:
   ]
 }
 ```
+### sensu_server_chef::client - installs Sensu clients
 
+Include `sensu client's` in your node's `run_list`:
+
+```json
+{
+  "run_list": [
+    "recipe[sensu_server_chef::client]"
+  ]
+}
+```
 
 ## Contributing
 
