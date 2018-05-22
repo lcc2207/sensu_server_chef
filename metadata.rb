@@ -15,3 +15,5 @@ issues_url 'https://github.ge.com/lcc2207/sensu_server_chef'
 source_url 'https://github.ge.com/lcc2207/sensu_server_chef'
 
 depends 'sensu', '~> 4.3.1'
+depends 'chef-sugar'
+depends 'apt', '~> 6.1.4'
