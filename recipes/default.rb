@@ -1,4 +1,4 @@
-node.defautl['sensu']['rabbitmq']['host'] = 'localhost'
+node.default['sensu']['rabbitmq']['host'] = 'localhost'
 include_recipe 'sensu::default'
 include_recipe 'sensu::rabbitmq'
 include_recipe 'sensu::redis'
